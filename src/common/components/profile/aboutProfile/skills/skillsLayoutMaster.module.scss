@@ -1,0 +1,97 @@
+@import "src/styles/variable";
+
+.skills {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 12px 0;
+
+ .profileDataFields {
+  width: 100%;
+  h2 {
+   font-weight: 700;
+   font-size: 18px;
+   color: #212121;
+   margin-bottom: 12px;
+  }
+
+  .btnPosition {
+   display: flex;
+   justify-content: space-between;
+  }
+
+  .skills_item {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 8px;
+
+   .wrapperMasterInfo {
+    display: flex;
+    align-items: center;
+    flex: 0 1 154px;
+
+    .iconContainer {
+     width: 40px;
+     height: 40px;
+     margin-right: 16px;
+    }
+   }
+
+   .item {
+    color: #5b9232;
+    font-weight: 700;
+    font-size: 14px;
+    background: rgba(185, 239, 112, 0.1);
+    border: 1px solid #5b9232;
+    border-radius: 16px;
+    padding: 6px 12px;
+   }
+   .textNotes {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #1a1c18;
+   }
+
+   .containerImg {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px 4px;
+    width: 100%;
+
+    .img {
+     cursor: pointer;
+     position: relative;
+     display: flex;
+     max-width: 48%;
+     width: 124px;
+     height: 124px;
+
+     img {
+      width: 100%;
+      border-radius: 4px;
+     }
+
+     .lastImgAddMasck {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(51, 51, 51, 0.5);
+      font-weight: 700;
+      font-size: 14px;
+      color: #ffffff;
+     }
+    }
+   }
+  }
+
+  .modalOpen {
+   background-color: white;
+  }
+ }
+}

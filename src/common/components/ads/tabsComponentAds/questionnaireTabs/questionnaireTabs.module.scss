@@ -1,0 +1,30 @@
+@import "src/styles/variable";
+
+.hiddenAnimationRight {
+ display: flex;
+ flex-direction: column;
+ row-gap: 8px;
+ animation: loaderR 0.3s;
+ min-height: 70vh;
+
+ @keyframes loaderR {
+  0% {
+   transform: translate(300px, 0);
+  }
+  100% {
+   transform: translate(0);
+  }
+ }
+
+ .recommendations {
+  font-weight: 700;
+  font-size: 18px;
+  color: #212121;
+ }
+
+ .mainQuestionnaire {
+  & > div:not(:first-child) {
+   border-top: 1px solid #ecebeb;
+  }
+ }
+}

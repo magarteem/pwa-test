@@ -1,0 +1,19 @@
+.optionCustom {
+ // height: 0 !important;
+ // display: none !important;
+ // position: absolute;
+ // overflow: hidden !important;
+ // padding: 0 !important;
+ // opacity: 0;
+}
+
+.iconArrow {
+ transform: rotate(180deg);
+}
+
+.openMenu {
+ transition: all 2s;
+ display: flex;
+ align-items: center;
+ cursor: pointer;
+}

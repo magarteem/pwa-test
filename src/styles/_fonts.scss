@@ -1,0 +1,14 @@
+$font_Mulish_normal: "Mulish-Medium";
+$font_Mulish_regular: "Mulish_Regular";
+
+@font-face {
+ font-family: "Mulish-Medium";
+ src: local("Mulish-VariableFont_wght"),
+  url(../assets/fonts/mulish/Mulish-VariableFont_wght.ttf) format("truetype");
+ font-display: fallback;
+}
+@font-face {
+ font-family: "Mulish_Regular";
+ src: local("Mulish_Regular"), url(../assets/fonts/mulish/Mulish-Regular.ttf) format("truetype");
+ font-display: fallback;
+}

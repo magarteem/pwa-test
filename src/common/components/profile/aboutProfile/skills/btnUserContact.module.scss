@@ -1,0 +1,71 @@
+@import "src/styles/variable";
+
+.btnWrapperPosition {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ column-gap: 10px;
+ padding: 0 0 12px;
+
+ @media (min-width: $mediaMaxWidth575px) {
+  justify-content: space-around;
+ }
+ @media (min-width: $mediaMaxWidth991px) {
+  justify-content: space-evenly;
+ }
+
+ .btnUserContact {
+  @include flex_position();
+  width: 100%;
+  height: 35px;
+
+  .buttonContactWrapper {
+   width: 100%;
+   height: 100%;
+   background-color: $white;
+   border-radius: 100px;
+   color: #2b6c00;
+   border: 1.5px solid #2b6c00;
+   font-size: 14px;
+   font-weight: 600;
+   transition: all 0.2s;
+   padding: 0.4rem;
+
+   &:hover {
+    background: rgb(199 221 169);
+   }
+
+   &:active {
+    background-color: rgb(59, 101, 1);
+    color: $white;
+   }
+
+   &:disabled {
+    background-color: #cdcdcc;
+    border: none;
+    color: $white;
+   }
+  }
+
+  .error {
+   color: red;
+   border: 1.5px solid red;
+  }
+ }
+
+ // .profileData {
+ //  width: 100%;
+
+ //  h2 {
+ //   font-weight: 700;
+ //   font-size: 20px;
+ //   color: #212121;
+ //   margin-bottom: 20px;
+ //  }
+
+ //  .btnPosition {
+ //   display: flex;
+ //   justify-content: space-between;
+ //  }
+ // }
+}

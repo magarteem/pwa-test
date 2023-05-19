@@ -1,0 +1,46 @@
+@import "src/styles/variable";
+
+@font-face {
+ font-family: system;
+ font-style: normal;
+ font-weight: 300;
+ src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"),
+  local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"),
+  local("Tahoma");
+}
+
+@font-face {
+ font-family: "Mulish_Bold";
+ src: local("Mulish_Bold"),
+  url(../assets/fonts/mulish/Mulish-VariableFont_wght.ttf) format("truetype");
+ font-display: fallback;
+}
+
+@font-face {
+ font-family: "Mulish_Regular";
+ src: local("Mulish_Regular"), url(../assets/fonts/Mulish_Regular.woff2) format("woff2");
+ font-display: fallback;
+}
+
+@font-face {
+ font-family: "Gilroy_Bold";
+ src: local("Gilroy_Bold"), url(../assets/fonts/Gilroy_Bold.woff2) format("woff2");
+ font-display: fallback;
+}
+
+html,
+body {
+ height: 100%;
+ font-family: $font_Mulish_normal, system, sans-serif;
+ font-size: 16px;
+ font-weight: 400;
+ background-color: #fdfdf5;
+
+ .App {
+  @include flex_direction_column_align_center_position();
+  position: relative;
+
+  min-height: 100vh; // для 100vh <PreLoader />
+  //height: 100vh; - влияет на скрол
+ }
+}

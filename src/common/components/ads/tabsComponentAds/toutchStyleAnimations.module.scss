@@ -1,0 +1,22 @@
+@import "src/styles/variable";
+
+.hiddenAnimationLeft {
+ display: flex;
+ flex-direction: column;
+ row-gap: 8px;
+ animation: loaderL 0.3s;
+ min-height: 70vh;
+}
+
+@keyframes loaderL {
+ 0% {
+  transform: translate(-300px, 0);
+ }
+ 100% {
+  transform: translate(0);
+ }
+}
+
+.minHeight70 {
+ min-height: 70vh;
+}

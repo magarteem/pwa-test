@@ -1,0 +1,65 @@
+@import "src/styles/variable";
+
+@mixin containerAnimation {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  min-height: 70vh;
+}
+// -------------------------
+
+.addGapStyle {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  gap: 16px;
+
+  .ads {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .reStyleImportant {
+      div {
+        padding: 0;
+
+        h2 {
+          display: none;
+        }
+      }
+    }
+
+    .publicationDate {
+      font-size: 12px;
+      color: #43483e;
+    }
+  }
+}
+
+.hiddenAnimationLeft {
+  @include containerAnimation();
+  animation: loaderL 0.3s;
+}
+
+.hiddenAnimationRight {
+  @include containerAnimation();
+  animation: loaderR 0.3s;
+}
+
+@keyframes loaderR {
+  0% {
+    transform: translate(300px, 0);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes loaderL {
+  0% {
+    transform: translate(-300px, 0);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
